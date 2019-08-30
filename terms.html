@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  	<title>Carne</title>
+
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #163d6d;z-index: 50;}
+        #loader-wrapper .imgWrapper{position:absolute;top:50%;left:50%;max-width:38px;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body .vertical-centered-box .content{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-animation:fadein 250ms linear .1s forwards;-moz-animation:fadein 250ms linear .1s forwards;-o-animation:fadein 250ms linear .1s forwards;animation:fadein 250ms linear .1s forwards;display:inline-block;vertical-align:middle;text-align:left;font-size:0;opacity:0}.loader-line-mask{position:absolute;left:50%;top:50%;width:50px;height:100px;margin-left:-50px;margin-top:-50px;overflow:hidden;-webkit-transform-origin:50px 50px;-moz-transform-origin:50px 50px;-ms-transform-origin:50px 50px;-o-transform-origin:50px 50px;transform-origin:50px 50px;-webkit-mask-image:-webkit-linear-gradient(top,#000,rgba(0,0,0,0));mix-blend-mode:hard-light;opacity:.8}.loader-line-mask .loader-line{width:100px;height:100px;border-radius:50%}.loader-line-mask.one{-webkit-animation:rotate 2s infinite linear;-moz-animation:rotate 2s infinite linear;-o-animation:rotate 2s infinite linear;animation:rotate 2s infinite linear}.loader-line-mask.one .loader-line{box-shadow:inset 0 0 0 8px #fff}.loader-line-mask.two{-webkit-animation:rotate 1.8s .5s infinite linear;-moz-animation:rotate 1.8s .5s infinite linear;-o-animation:rotate 1.8s .5s infinite linear;animation:rotate 1.8s .5s infinite linear}.loader-line-mask.two .loader-line{box-shadow:inset 0 0 0 8px #18acec}.loader-line-mask.three{-webkit-animation:rotate 2s 1s infinite linear;-moz-animation:rotate 2s 1s infinite linear;-o-animation:rotate 2s 1s infinite linear;animation:rotate 2s 1s infinite linear}.loader-line-mask.three .loader-line{box-shadow:inset 0 0 0 8px #08274c}.loader-line-mask.four{-webkit-animation:rotate 1.8s 1.4s infinite linear;-moz-animation:rotate 1.8s 1.4s infinite linear;-o-animation:rotate 1.8s 1.4s infinite linear;animation:rotate 1.8s 1.4s infinite linear}.loader-line-mask.four .loader-line{box-shadow:inset 0 0 0 8px #247BA0}
+            @-webkit-keyframes rotate{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotate{0%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(360deg)}}@-o-keyframes rotate{0%{-o-transform:rotate(0)}100%{-o-transform:rotate(360deg)}}@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-moz-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-o-keyframes fadein{0%{opacity:0}100%{opacity:1}}@keyframes fadein{0%{opacity:0}100%{opacity:1}}[not-existing]{zoom:1}
+            html:not(.mobile)::-webkit-scrollbar, html:not(.mobile) *::-webkit-scrollbar {width: 6px; height: 6px;}
+            html:not(.mobile)::-webkit-scrollbar-track, html:not(.mobile) *::-webkit-scrollbar-track {background: rgba(0,0,0,.15); }
+            html:not(.mobile)::-webkit-scrollbar-thumb, html:not(.mobile) *::-webkit-scrollbar-thumb {background: #08274c; border-radius: 3px;}
+
+    </style>
+</head>
+<body>
+
+    <!-- Loader-START -->
+    <div id="loader-wrapper">
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask one">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask two">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask three">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask four">
+              <div class="loader-line"></div>
+            </div>
+          </div>
+        </div>  
+        <div class="imgWrapper">
+            <img src="img/loader-logo.jpg" alt="">
+        </div>
+    </div>
+    <!-- Loader-END -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header class="color2">
+            <div class="header-container">
+                <a id="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+                <div class="nav-wrapper">
+                    <div class="nav-overflow">
+                        <nav>
+                            <a href="index.html">HOME</a>
+                            <a href="about.html">ABOUT US</a>
+                            <a href="solutions.html">SOLUTIONS</a>
+                            <a href="careers.html">CAREERS</a>
+                            <a href="news.html">NEWS</a>
+                            <a href="events.html">EVENTS</a>
+                            <a href="contact.html">CONTACT</a>
+                        </nav>
+                        <div class="header-right">
+                            <div class="languages">
+                                <a class="title">ENG</a>
+                                <div class="toggle">
+                                    <a class="active" href="index.html">Eng</a>
+                                    <a href="index.html">Fr</a>
+                                    <a href="index.html">Es</a>
+                                </div>
+                            </div>
+                            <div class="search open-popup" data-rel="1">
+                                <img src="img/icon-17.png" alt="" />
+                                <img src="img/icon-20.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <!-- Header-END -->
+
+        <div class="emptySpace40"></div>
+        <div class="emptySpace200 emptySpace-sm110"></div>
+
+        <div class="container container-fullSize-sm">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="simple-text color3">
+                        <div class="text-shortcode style-1 no-paddingTitile">
+                            <div class="title">
+                                <h1>TERMS &amp; CONDITIONS</h1>
+                                <div class="title-line color1"></div>
+                            </div>
+                        </div>
+                        <div class="bs-xs-40"></div>
+                        <h5>1. Introduction</h5>
+                        <br/>
+                        <br/>
+                        <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of this website. These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.</p>
+                        <br/>
+                        <p>Minors or people below 18 years old are not allowed to use this Website.</p>
+                        <br/>
+                        <br/>
+                        <h5>2. Intellectual Propery Rights</h5>
+                        <br/>
+                        <br/>
+                        <p>Other than the content you own, under these Terms, Carne Group and/or its licensors own all the intellectual property rights and materials contained in this Website.</p>
+                        <p>You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+                        <br/>
+                        <br/>
+                        <h5>3. Restrictions</h5>
+                        <br/>
+                        <br/>
+                        <p><b>You are specifically restricted from all of the following:</b></p>
+                        <ul>
+                            <li>publishing any Website material in any other media;</li>
+                            <li>selling, sublicensing and/or otherwise commercializing any Website material;</li>
+                            <li>publicly performing and/or showing any Website material;</li>
+                            <li>using this Website in any way that is or may be damaging to this Website;</li>
+                            <li>using this Website in any way that impacts user access to this Website;</li>
+                            <li>using this Website contrary to applicable laws and regulations, or in any way may cause harm to the Website, or to any person or business entity;</li>
+                            <li>engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website;</li>
+                            <li>using this Website to engage in any advertising or marketing.</li>
+                        </ul>
+                        <p>Certain areas of this Website are restricted from being access by you and Carne Group may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.</p>
+                        <br/>
+                        <br/>
+                        <h5>4. Your Content</h5>
+                        <br/>
+                        <br/>
+                        <p>In these Website Standard Terms and Conditions, “Your Content” shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant Carne Group a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.</p>
+                        <p>Your Content must be your own and must not be invading any third-party’s rights. Carne Group reserves the right to remove any of Your Content from this Website at any time without notice.</p>
+                        <br/>
+                        <br/>
+                        <h5>5. No Warranties</h5>
+                        <br/>
+                        <br/>
+                        <p>This Website is provided “as is,” with all faults, and Carne Group express no representations or warranties, of any kind related to this Website or the materials contained on this Website. Also, nothing contained on this Website shall be interpreted as advising you.</p>
+                        <br/>
+                        <br/>
+                        <h5>6. Limitation of Liability</h5>
+                        <br/>
+                        <br/>
+                        <p>In no event shall Carne Group, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.  Carne Group, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
+                        <br/>
+                        <br/>
+                        <h5>7. Indemnification</h5>
+                        <br/>
+                        <br/>
+                        <p>You hereby indemnify to the fullest extent Carne Group from and against any and/or all liabilities, costs, demands, causes of action, damages and expenses arising in any way related to your breach of any of the provisions of these Terms.</p>
+                        <br/>
+                        <br/>
+                        <h5>8. Severability</h5>
+                        <br/>
+                        <br/>
+                        <p>If any provision of these Terms is found to be invalid under any applicable law, such provisions shall be deleted without affecting the remaining provisions herein.</p>
+                        <br/>
+                        <br/>
+                        <h5>9. Variation of Terms</h5>
+                        <br/>
+                        <br/>
+                        <p>Carne Group is permitted to revise these Terms at any time as it sees fit, and by using this Website you are expected to review these Terms on a regular basis.</p>
+                        <br/>
+                        <br/>
+                        <h5>10. Assignment</h5>
+                        <br/>
+                        <br/>
+                        <p>The Carne Group is allowed to assign, transfer, and subcontract its rights and/or obligations under these Terms without any notification. However, you are not allowed to assign, transfer, or subcontract any of your rights and/or obligations under these Terms.</p>
+                        <br/>
+                        <br/>
+                        <h5>11. Entire Agreement</h5>
+                        <br/>
+                        <br/>
+                        <p>These Terms constitute the entire agreement between Carne Group and you in relation to your use of this Website, and supersede all prior agreements and understandings.</p>
+                        <br/>
+                        <br/>
+                        <h5>12. Governing Law &amp; Jurisdiction</h5>
+                        <br/>
+                        <br/>
+                        <p>These Terms will be governed by and interpreted in accordance with the laws of the State of Ireland, and you submit to the non-exclusive jurisdiction of the state and courts located in Dublin, Ireland for the resolution of any disputes.</p>
+                    </div>
+                    <div class="emptySpace55 emptySpace-sm40"></div>
+                    <div class="termsDate">
+                        as of 20 June 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="emptySpace70 emptySpace-sm40"></div>
+    
+        <!-- Footer-START -->
+        <footer>
+            <div class="content-columns">
+                <div class="content-left footer-left">
+                    <div class="footer-content">
+                        <div class="footer-twitter-title color1"><img src="img/icon-18.png" alt="" />https://twitter.com/<b>carneglobal</b></div>
+                        <i class="sa lg transparent90 white">Help For Children announces appointment of Jennifer Collins as a new member to its Global Board of Directors, http://www.carnegroup.com/help-for-children-announces …</i>
+                    </div>
+                </div>
+                <div class="content-right footer-right">
+                    <div class="footer-content">
+                        <h5 class="color1 light">SUBSCRIBE TO OUR NEWSLETTER</h5>
+                        <div class="bs-xs-30"></div>
+                        <input class="footer-input" value="" placeholder="your e-mail address..." />
+                        <div class="bs-xs-35"></div>
+                        <a class="button">
+                            <span class="text"><span>SUBSCRIBE NOW</span> <img src="img/icon-1.png" alt="" /></span>
+                            <span class="text"><span>SUBSCRIBE NOW</span> <img src="img/icon-1.png" alt="" /></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img id="footer-logo" src="img/bg-transparent-1.png" alt="" />
+            <div class="footer-menu">
+                <a href="index.html"><img src="img/logo-footer.png" alt="" /></a>
+                <a href="#">TERMS &amp; CONDITIONS</a>
+                <a href="#">SITEMAP</a>
+                <a href="#">CONTACT</a>
+                <a href="#">PRESS</a>
+                <a href="#">DOWNLOADS</a>
+                <a href="#">MEDIA</a>
+            </div>
+        </footer>
+        <!-- Footer-END -->
+
+    </div>
+
+    <!--    Popup-START     -->
+    <div class="popup-wrapper">
+        <div class="bg-layer"></div>
+
+        <!--    Search popup-START    -->
+        <div class="popup-content" data-rel="1">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <form class="searchForm">
+                                <div class="input-wrapper light">
+                                    <input class="input" type="text" value="" placeholder="Enter keywords">
+                                    <div class="inputFocusLine"></div>
+                                </div>
+                                <div class="imgWrapper">
+                                    <input type="submit">
+                                    <img src="img/icon-17.png" alt="">
+                                    <img src="img/icon-24.png" alt="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    Popup close button-START    -->
+            <div class="button-close">
+                <span></span><span></span>
+            </div>
+            <!--    Popup close button-END  -->
+        </div>
+        <!--    Search popup-END  -->
+
+        <!--    Video popup-START    -->
+        <div class="popup-content" data-rel="2">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+                <div class="videoIframe">
+                    <div class="embed-responsive embed-responsive-16by9 fullHeightVideo">
+                        <iframe width="560" height="315" src="about:blank" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--    Popup close button-START    -->
+                <div class="button-close">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Video popup-END  -->
+
+    </div>
+    <!--    Popup-END   -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    
+    <!--    Styles-START    -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/snazzy-info-window.css" rel="stylesheet" type="text/css" />
+    <!--    Styles-END    -->
+
+    <!--    Script-START    -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/global.js" type="text/javascript"></script>
+    <!--    Script-END    -->
+
+
+</body>
+</html>

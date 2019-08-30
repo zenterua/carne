@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  	<title>Carne</title>
+
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #163d6d;z-index: 50;}
+        #loader-wrapper .imgWrapper{position:absolute;top:50%;left:50%;max-width:38px;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body .vertical-centered-box .content{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-animation:fadein 250ms linear .1s forwards;-moz-animation:fadein 250ms linear .1s forwards;-o-animation:fadein 250ms linear .1s forwards;animation:fadein 250ms linear .1s forwards;display:inline-block;vertical-align:middle;text-align:left;font-size:0;opacity:0}.loader-line-mask{position:absolute;left:50%;top:50%;width:50px;height:100px;margin-left:-50px;margin-top:-50px;overflow:hidden;-webkit-transform-origin:50px 50px;-moz-transform-origin:50px 50px;-ms-transform-origin:50px 50px;-o-transform-origin:50px 50px;transform-origin:50px 50px;-webkit-mask-image:-webkit-linear-gradient(top,#000,rgba(0,0,0,0));mix-blend-mode:hard-light;opacity:.8}.loader-line-mask .loader-line{width:100px;height:100px;border-radius:50%}.loader-line-mask.one{-webkit-animation:rotate 2s infinite linear;-moz-animation:rotate 2s infinite linear;-o-animation:rotate 2s infinite linear;animation:rotate 2s infinite linear}.loader-line-mask.one .loader-line{box-shadow:inset 0 0 0 8px #fff}.loader-line-mask.two{-webkit-animation:rotate 1.8s .5s infinite linear;-moz-animation:rotate 1.8s .5s infinite linear;-o-animation:rotate 1.8s .5s infinite linear;animation:rotate 1.8s .5s infinite linear}.loader-line-mask.two .loader-line{box-shadow:inset 0 0 0 8px #18acec}.loader-line-mask.three{-webkit-animation:rotate 2s 1s infinite linear;-moz-animation:rotate 2s 1s infinite linear;-o-animation:rotate 2s 1s infinite linear;animation:rotate 2s 1s infinite linear}.loader-line-mask.three .loader-line{box-shadow:inset 0 0 0 8px #08274c}.loader-line-mask.four{-webkit-animation:rotate 1.8s 1.4s infinite linear;-moz-animation:rotate 1.8s 1.4s infinite linear;-o-animation:rotate 1.8s 1.4s infinite linear;animation:rotate 1.8s 1.4s infinite linear}.loader-line-mask.four .loader-line{box-shadow:inset 0 0 0 8px #247BA0}
+            @-webkit-keyframes rotate{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotate{0%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(360deg)}}@-o-keyframes rotate{0%{-o-transform:rotate(0)}100%{-o-transform:rotate(360deg)}}@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-moz-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-o-keyframes fadein{0%{opacity:0}100%{opacity:1}}@keyframes fadein{0%{opacity:0}100%{opacity:1}}[not-existing]{zoom:1}
+            html:not(.mobile)::-webkit-scrollbar, html:not(.mobile) *::-webkit-scrollbar {width: 6px; height: 6px;}
+            html:not(.mobile)::-webkit-scrollbar-track, html:not(.mobile) *::-webkit-scrollbar-track {background: rgba(0,0,0,.15); }
+            html:not(.mobile)::-webkit-scrollbar-thumb, html:not(.mobile) *::-webkit-scrollbar-thumb {background: #08274c; border-radius: 3px;}
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Loader-START -->
+    <div id="loader-wrapper">
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask one">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask two">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask three">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask four">
+              <div class="loader-line"></div>
+            </div>
+          </div>
+        </div>  
+        <div class="imgWrapper">
+            <img src="img/loader-logo.jpg" alt="">
+        </div>
+    </div>
+    <!-- Loader-END -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header>
+            <div class="header-container">
+                <a id="logo" href="index.html"><img src="img/logo-white.jpg" alt="" /></a>
+                <div class="breadCrumbs white sa sm">
+                    <p>OVERVIEW</p>
+                </div>
+            </div>
+        </header>
+        <!-- Header-END -->
+
+        <div class="container-fluid cellViewPageHeight sitemap">
+            <div class="cell-view">
+            <div class="emptySpace80 emptySpace-sm180"></div>
+                <!--   Close button-START    -->
+                <div class="button-close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <!--   Close button-END  -->
+                <div class="bg-entry" style="background-image: url(img/overview-bg.jpg);"></div>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="row overviewWrapper simpleFlex">
+                            <div class="col-xs-12 col-sm-4 col-md-1 no-padding">
+                                <div class="overviewSteps homeStep">
+                                    <a href="index.html" class="bigStep sa sm">
+                                        <p>HOME</p>
+                                        <span><i></i></span>
+                                    </a>
+                                    <div class="verticalSteps">
+                                        <a href="#" class="smallStep sa sm">
+                                            <span><i></i></span>
+                                            <p>LEGAL</p>
+                                        </a>
+                                        <a href="#" class="smallStep sa sm">
+                                            <span><i></i></span>
+                                            <p>SITEMAP</p>
+                                        </a>
+                                        <a href="#" class="smallStep sa sm">
+                                            <span><i></i></span>
+                                            <p>PRESS</p>
+                                        </a>
+                                        <a href="#" class="smallStep sa sm">
+                                            <span><i></i></span>
+                                            <p>DOWNLOADS</p>
+                                        </a>
+                                        <a href="#" class="smallStep sa sm">
+                                            <span><i></i></span>
+                                            <p>MEDIA</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="emptySpace-sm80 emptySpace-xs40"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-5 col-md-3 no-padding">
+                                <div class="aboutStep">
+                                    <a href="about.html" class="bigStep sa sm">
+                                        <p>ABOUT US</p>
+                                        <span></span>
+                                    </a>
+                                    <div class="verticalSteps">
+                                        <a href="#" class="smallStep sa sm">
+                                            <span><i></i></span>
+                                            <p>MEET THE <br> MANAGEMENT</p>
+                                            
+                                        </a>
+                                        <a href="#" class="smallStep sa sm">
+                                            <span><i></i></span>
+                                            <p>HISTORY <br> OF CARNE</p>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>PEOPLE</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>STRATEGY & VISION</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>SPECIALISTS & INNOVATORS</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>IMPACT</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>GLOBAL REACH, LOCAL PRESENCE</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>CLIENTS & PARTNERS</p>
+                                    </a>
+                                </div>
+                                <div class="emptySpace-sm80 emptySpace-xs40"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 no-padding">
+                                <div class="overviewSteps solutionSteps">
+                                    <a href="solutions.html" class="bigStep sa sm">
+                                        <p>SOLUTIONS</p>
+                                        <span></span>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>MANAGEMENT COMPANY</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>GOVERNANCE SOLUTIONS</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>PLATFORMS</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>FUND SOLUTIONS</p>
+                                    </a>
+                                </div>
+                                <div class="emptySpace-sm80 emptySpace-xs0"></div>
+                            </div>
+                            <div class="col-xs-12 col-sm-9  col-md-3 no-padding"> 
+                                <div class="emptySpace-sm40"></div>
+                                <div class="overviewSteps carrerSteps">
+                                    <a href="careers.html.html" class="bigStep sa sm">
+                                        <p>CAREERS</p>
+                                        <span></span>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>LEARNING & TRAINING</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>JOB WIZARAD</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>ALL JOB LISTINGS</p>
+                                    </a>
+                                </div>
+                                <div class="overviewSteps newsSteps">
+                                    <a href="about.html" class="bigStep sa sm">
+                                        <p>NEWS</p>
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <div class="overviewSteps eventSteps">
+                                    <a href="events.html" class="bigStep sa sm">
+                                        <p>EVENTS</p>
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-2 no-padding">
+                                <div class="emptySpace-sm40"></div>
+                                <div class="overviewSteps contactSteps">
+                                    <a href="contact.html" class="bigStep sa sm">
+                                        <p>CONTACT</p>
+                                        <span></span>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>DUBLIN</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>CAYMAN ISLANDS</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>CHANNEL ISLANDS</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>CHICAGO</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>LONDON</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>LUXEMBOURG</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>NEW YORK</p>
+                                    </a>
+                                    <a href="#" class="smallStep sa sm">
+                                        <span><i></i></span>
+                                        <p>ZURICH</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    
+    <!--    Styles-START    -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/snazzy-info-window.css" rel="stylesheet" type="text/css" />
+    <!--    Styles-END    -->
+
+    <!--    Script-START    -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/global.js" type="text/javascript"></script>
+    <!--    Script-END    -->
+
+</body>
+</html>

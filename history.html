@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  	<title>Carne</title>
+
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #163d6d;z-index: 50;}
+        #loader-wrapper .imgWrapper{position:absolute;top:50%;left:50%;max-width:38px;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body .vertical-centered-box .content{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-animation:fadein 250ms linear .1s forwards;-moz-animation:fadein 250ms linear .1s forwards;-o-animation:fadein 250ms linear .1s forwards;animation:fadein 250ms linear .1s forwards;display:inline-block;vertical-align:middle;text-align:left;font-size:0;opacity:0}.loader-line-mask{position:absolute;left:50%;top:50%;width:50px;height:100px;margin-left:-50px;margin-top:-50px;overflow:hidden;-webkit-transform-origin:50px 50px;-moz-transform-origin:50px 50px;-ms-transform-origin:50px 50px;-o-transform-origin:50px 50px;transform-origin:50px 50px;-webkit-mask-image:-webkit-linear-gradient(top,#000,rgba(0,0,0,0));mix-blend-mode:hard-light;opacity:.8}.loader-line-mask .loader-line{width:100px;height:100px;border-radius:50%}.loader-line-mask.one{-webkit-animation:rotate 2s infinite linear;-moz-animation:rotate 2s infinite linear;-o-animation:rotate 2s infinite linear;animation:rotate 2s infinite linear}.loader-line-mask.one .loader-line{box-shadow:inset 0 0 0 8px #fff}.loader-line-mask.two{-webkit-animation:rotate 1.8s .5s infinite linear;-moz-animation:rotate 1.8s .5s infinite linear;-o-animation:rotate 1.8s .5s infinite linear;animation:rotate 1.8s .5s infinite linear}.loader-line-mask.two .loader-line{box-shadow:inset 0 0 0 8px #18acec}.loader-line-mask.three{-webkit-animation:rotate 2s 1s infinite linear;-moz-animation:rotate 2s 1s infinite linear;-o-animation:rotate 2s 1s infinite linear;animation:rotate 2s 1s infinite linear}.loader-line-mask.three .loader-line{box-shadow:inset 0 0 0 8px #08274c}.loader-line-mask.four{-webkit-animation:rotate 1.8s 1.4s infinite linear;-moz-animation:rotate 1.8s 1.4s infinite linear;-o-animation:rotate 1.8s 1.4s infinite linear;animation:rotate 1.8s 1.4s infinite linear}.loader-line-mask.four .loader-line{box-shadow:inset 0 0 0 8px #247BA0}
+            @-webkit-keyframes rotate{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotate{0%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(360deg)}}@-o-keyframes rotate{0%{-o-transform:rotate(0)}100%{-o-transform:rotate(360deg)}}@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-moz-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-o-keyframes fadein{0%{opacity:0}100%{opacity:1}}@keyframes fadein{0%{opacity:0}100%{opacity:1}}[not-existing]{zoom:1}
+            html:not(.mobile)::-webkit-scrollbar, html:not(.mobile) *::-webkit-scrollbar {width: 6px; height: 6px;}
+            html:not(.mobile)::-webkit-scrollbar-track, html:not(.mobile) *::-webkit-scrollbar-track {background: rgba(0,0,0,.15); }
+            html:not(.mobile)::-webkit-scrollbar-thumb, html:not(.mobile) *::-webkit-scrollbar-thumb {background: #08274c; border-radius: 3px;}
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Loader-START -->
+    <div id="loader-wrapper">
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask one">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask two">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask three">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask four">
+              <div class="loader-line"></div>
+            </div>
+          </div>
+        </div>  
+        <div class="imgWrapper">
+            <img src="img/loader-logo.jpg" alt="">
+        </div>
+    </div>
+    <!-- Loader-END -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header>
+            <div class="header-container">
+                <a id="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+                <div class="breadCrumbs sa sm">
+                    <a href="about.html">ABOUT US</a>
+                    <p>CARNE’S HISTORY</p>
+                </div>
+            </div>
+        </header>
+        <!-- Header-END -->
+
+        <div class="headerList sa sm">
+            <div class="headerListInner">
+                <div class="borderLeftList">
+                    <div id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p>LIST</p>
+                </div>
+            </div>
+            <div class="headerListIteam">
+                <ul class="sa sm color3">
+                    <li><a href="#">JOHN DONOHOE</a></li>
+                    <li class="active"><a href="#"> STEVE BERNAT</a></li>
+                    <li><a href="#"> AYMERIC LECHARTIER</a></li>
+                    <li><a href="#"> CHRIS DAY</a></li>
+                    <li><a href="#"> DES FULLAM</a></li>
+                    <li><a href="#"> JOHN SKELLY</a></li>
+                    <li><a href="#"> MEGAN FELLNER</a></li>
+                    <li><a href="#"> RORY FLANGAN</a></li>
+                    <li><a href="#"> YVONNE CONNOLLY</a></li>
+                    <li><a href="#"> MARK HODGSON</a></li>
+                    <li><a href="#"> ALEX VILCHEZ</a></li>
+                    <li><a href="#"> ANIL SINGH</a></li>
+                    <li><a href="#"> SCOTT CRAVEN JONES</a></li>
+                    <li><a href="#"> JOE HARDIMAN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="headerListLayer"></div>
+
+        <!--  History swiper-START --> 
+        <div class="swiperMainWrapper historyConteinerHeight">
+         <div class="emptySpace145 emptySpace-xs125"></div>
+            <!-- Team popup-START -->
+            <div class="teamPopup hideTeam teamNone">
+                <!--    Popup close button-START    -->
+                <div class="button-close black">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END    -->
+
+                <!--    About us swiper-START    -->
+                <div class="swiperMainWrapper">
+                    <!--    Swiper Buttons-START    -->
+                    <div class="swiper-button-prev blackButton size2 allDeviceHidden"></div>
+                    <div class="swiper-button-next blackButton size2 allDeviceHidden"></div>
+                    <!--    Swiper Buttons-END  -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="teamYear">
+                                    <div class="counterWrapper">
+                                        <i>‘</i>
+                                        <div class="nubmerCounter">08</div>
+                                        <h3 class="h5 h5vw as">OUR TEAM <br> FROM THEN</h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-container" data-breakpoints="1" data-slides-per-view="3" data-lt-slides="3" data-md-slides="2" data-sm-slides="2" data-xs-slides="1" data-space="0">
+                                    <div class="swiper-wrapper">
+                                        <!--    Slide1-START    -->
+                                        <div class="swiper-slide"> 
+                                           <div class="ourTeam">
+                                                <!-- Team 1 img-START -->
+                                                <div class="imgWrapper">
+                                                    <img src="img/team08/team08-img1.jpg" alt="">
+                                                </div>
+                                                <!-- Team 1 img-END -->
+
+                                                <!-- Team 2 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img2.jpg" alt="">
+                                                </div>
+                                                <!-- Team 2 img-END -->
+
+                                                <!-- Team 3 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img3.jpg" alt="">
+                                                </div>
+                                                <!-- Team 3 img-END -->
+
+                                                <!-- Team 4 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img4.jpg" alt="">
+                                                </div>
+                                                <!-- Team 4 img-END -->
+
+                                                <!-- Team 5 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team-empty-img.jpg" alt="">
+                                                </div>
+                                                <!-- Team 5 img-END -->
+
+                                                <!-- Team 6 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img5.jpg" alt="">
+                                                </div>
+                                                <!-- Team 6 img-END -->
+
+                                                <!-- Team 7 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img6.jpg" alt="">
+                                                </div>
+                                                <!-- Team 7 img-END -->
+
+                                                <!-- Team 8 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img7.jpg" alt="">
+                                                </div>
+                                                <!-- Team 8 img-END -->
+
+                                                <!-- Team 9 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img8.jpg" alt="">
+                                                </div>
+                                                <!-- Team 9 img-END -->
+
+                                                <!-- Team 10 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img9.jpg" alt="">
+                                                </div>
+                                                <!-- Team 10 img-END -->
+
+                                                <!-- Team 11 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img10.jpg" alt="">
+                                                </div>
+                                                <!-- Team 12 img-END -->
+
+                                                <!-- Team 13 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img11.jpg" alt="">
+                                                </div>
+                                                <!-- Team 13 img-END -->
+
+                                                <!-- Team 14 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img12.jpg" alt="">
+                                                </div>
+                                                <!-- Team 14 img-END -->
+
+                                                <!-- Team 15 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img13.jpg" alt="">
+                                                </div>
+                                                <!-- Team 15 img-END -->
+
+                                                <!-- Team 16 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img14.jpg" alt="">
+                                                </div>
+                                                <!-- Team 16 img-END -->
+
+                                                <!-- Team 17 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team-empty-img.jpg" alt="">
+                                                </div>
+                                                <!-- Team 17 img-END -->
+
+                                                <!-- Team 18 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team-empty-img.jpg" alt="">
+                                                </div>
+                                                <!-- Team 18 img-END -->
+
+                                                <!-- Team 19 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img15.jpg" alt="">
+                                                </div>
+                                                <!-- Team 19 img-END -->
+
+                                                <!-- Team 20 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img16.jpg" alt="">
+                                                </div>
+                                                <!-- Team 20 img-END -->
+                                           </div> 
+                                        </div>
+                                        <!--    Slide1-END  -->
+
+                                        <!--    Slide2-START    -->
+                                        <div class="swiper-slide"> 
+                                           <div class="ourTeam">
+                                                <!-- Team 1 img-START -->
+                                                <div class="imgWrapper">
+                                                    <img src="img/team08/team08-img17.jpg" alt="">
+                                                </div>
+                                                <!-- Team 1 img-END -->
+
+                                                <!-- Team 2 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img18.jpg" alt="">
+                                                </div>
+                                                <!-- Team 2 img-END -->
+
+                                                <!-- Team 3 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img19.jpg" alt="">
+                                                </div>
+                                                <!-- Team 3 img-END -->
+
+                                                <!-- Team 4 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img20.jpg" alt="">
+                                                </div>
+                                                <!-- Team 4 img-END -->
+
+                                                <!-- Team 5 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img21.jpg" alt="">
+                                                </div>
+                                                <!-- Team 5 img-END -->
+
+                                                <!-- Team 6 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img22.jpg" alt="">
+                                                </div>
+                                                <!-- Team 6 img-END -->
+
+                                                <!-- Team 7 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img23.jpg" alt="">
+                                                </div>
+                                                <!-- Team 7 img-END -->
+
+                                                <!-- Team 8 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img24.jpg" alt="">
+                                                </div>
+                                                <!-- Team 8 img-END -->
+
+                                                <!-- Team 9 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img25.jpg" alt="">
+                                                </div>
+                                                <!-- Team 9 img-END -->
+
+                                                <!-- Team 10 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img26.jpg" alt="">
+                                                </div>
+                                                <!-- Team 10 img-END -->
+
+                                                <!-- Team 11 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img27.jpg" alt="">
+                                                </div>
+                                                <!-- Team 12 img-END -->
+
+                                                <!-- Team 13 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img28.jpg" alt="">
+                                                </div>
+                                                <!-- Team 13 img-END -->
+
+                                                <!-- Team 14 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img29.jpg" alt="">
+                                                </div>
+                                                <!-- Team 14 img-END -->
+
+                                                <!-- Team 15 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img30.jpg" alt="">
+                                                </div>
+                                                <!-- Team 15 img-END -->
+
+                                                <!-- Team 16 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img31.jpg" alt="">
+                                                </div>
+                                                <!-- Team 16 img-END -->
+
+                                                <!-- Team 17 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img32.jpg" alt="">
+                                                </div>
+                                                <!-- Team 17 img-END -->
+
+                                                <!-- Team 18 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team-empty-img.jpg" alt="">
+                                                </div>
+                                                <!-- Team 18 img-END -->  
+
+                                                <!-- Team 19 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img33.jpg" alt="">
+                                                </div>
+                                                <!-- Team 19 img-END -->                          
+                                           </div> 
+                                        </div>
+                                        <!--    Slide2-END  -->
+
+                                        <!--    Slide3-START    -->
+                                        <div class="swiper-slide"> 
+                                           <div class="ourTeam">
+                                                <!-- Team 1 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img34.jpg" alt="">
+                                                </div>
+                                                <!-- Team 1 img-END -->
+
+                                                <!-- Team 2 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img35.jpg" alt="">
+                                                </div>
+                                                <!-- Team 2 img-END -->
+
+                                                <!-- Team 3 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img36.jpg" alt="">
+                                                </div>
+                                                <!-- Team 3 img-END -->
+
+                                                <!-- Team 4 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img37.jpg" alt="">
+                                                </div>
+                                                <!-- Team 4 img-END -->
+
+                                                <!-- Team 5 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img38.jpg" alt="">
+                                                </div>
+                                                <!-- Team 5 img-END -->
+
+                                                <!-- Team 6 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img39.jpg" alt="">
+                                                </div>
+                                                <!-- Team 6 img-END -->
+
+                                                <!-- Team 7 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img40.jpg" alt="">
+                                                </div>
+                                                <!-- Team 7 img-END -->
+
+                                                <!-- Team 8 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img41.jpg" alt="">
+                                                </div>
+                                                <!-- Team 8 img-END -->
+
+                                                <!-- Team 9 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img42.jpg" alt="">
+                                                </div>
+                                                <!-- Team 9 img-END -->
+
+                                                <!-- Team 10 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img43.jpg" alt="">
+                                                </div>
+                                                <!-- Team 10 img-END -->
+
+                                                <!-- Team 11 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img44.jpg" alt="">
+                                                </div>
+                                                <!-- Team 12 img-END -->
+
+                                                <!-- Team 13 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team-empty-img.jpg" alt="">
+                                                </div>
+                                                <!-- Team 13 img-END -->
+
+                                                <!-- Team 14 img-START -->
+                                                <div class="imgWrapper">
+                                                   <img src="img/team08/team08-img45.jpg" alt="">
+                                                </div>
+                                                <!-- Team 14 img-END -->
+                                           </div> 
+                                        </div>
+                                        <!--    Slide3-END  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--    About us swiper-END  -->
+            </div>
+            <!-- Team popup-END -->
+
+            <!--    Swiper Buttons-START    -->
+            <div class="swiper-button-prev blackButton size2 hidden-sm hidden-xs"></div>
+            <div class="swiper-button-next blackButton size2 hidden-sm hidden-xs"></div>
+            <!--    Swiper Buttons-END  -->
+            <div class="swiper-container teamHistorySwiper" data-parallax="1">
+                <div class="swiper-wrapper">
+                    <!--    Slide1-START    -->
+                    <div class="swiper-slide"> 
+                        <div class="container-fluid">
+                            <div class="row relativeWrapper">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <!-- Padding bottom block bg-START -->
+                                    <div class="paddingBottonWrapper historyBlock style2">
+                                        <div class="paddingBottonInner">
+                                            <!-- Image1-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="thumbnailHover" data-swiper-parallax="-60%">
+                                                    <a href="about.html" class="bg-entry" style="background-image: url(img/history-img.jpg);"></a>
+                                                </div>
+                                                <div class="counterWrapper" data-swiper-parallax="-20%">
+                                                    <i>‘</i>
+                                                    <div class="nubmerCounter">08</div>
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <h6 class="h6 h6vw as"><a href="news.html"><b>OUR FIRST <br> CLIENT</b></a></h6>
+                                                    <p>JUNE</p>
+                                                </div>
+                                            </div>
+                                            <!-- Image1-END -->
+
+                                            <!-- Image2-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="bg-entry" style="background-image: url(img/history-img2.jpg);" data-swiper-parallax="-60%"></div>
+                                                <div class="button-play open-popup" data-rel="2" data-video-scr="https://www.youtube.com/embed/L0Q8BF1kjCM" data-swiper-parallax="-60%"></div>
+                                                     <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                        <h4 class="h4 h4vw as"><a href="about.html">CARNE LUXEMBOURG OPENS ITS DOORS</a></h4>
+                                                        <p>AUGUST</p>
+                                                    </div>
+                                            </div>
+                                            <!-- Image2-END -->
+
+                                            <!-- Image3-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="thumbnailHover" data-swiper-parallax="-60%">
+                                                    <a href="about.html" class="bg-entry" style="background-image: url(img/history-img3.jpg);"></a>
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <p>NOVEMBER</p>
+                                                    <h6 class="h6 h6vw as"><a href="news.html"><b>JOHN SMITH NAMED <br> LUXEMBOURG CEO</b></a></h6>
+                                                </div>
+                                            </div>
+                                            <!-- Image3-END -->
+
+                                            <!-- Image4-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="thumbnailHover" data-swiper-parallax="-60%">
+                                                    <a href="about.html" class="bg-entry" style="background-image: url(img/history-img4.jpg);">
+                                                    </a>
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <p><b>2008 IN THE INDUSTRY</b></p>
+                                                    <h6 class="h6 h6vw as"><a href="news.html"><b>NEW FINTECH SOLUTIONS <br> OFFER BETTER RESULTS</b></a></h6>
+                                                </div>
+                                            </div>
+                                            <!-- Image4-END -->
+
+                                            <!-- Image5-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="bg-entry" style="background-image: url(img/history-img5.jpg);" data-swiper-parallax="-60%">
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <span>FIRST LOGO <br> VERSION</span>
+                                                </div>
+                                            </div>
+                                            <!-- Image5-END -->
+                                            
+                                            <!-- Hsistory tema button-START -->
+                                            <div class="historyTeam" data-swiper-parallax="-20%">
+                                                <a href="#" class="button darkblue animation-right teamPopupButton" >
+                                                    <span class="text"><img src="img/icon-16.png" alt="" /> <span><b>2008</b> - BEHIND THE SCENES</span></span>
+                                                    <span class="text"><img src="img/icon-12.png" alt="" /> <span><b>2008</b> - BEHIND THE SCENES</span></span>
+                                                </a>
+                                            </div>
+                                            <!-- Hsistory tema button-END -->
+                                        </div>
+                                    </div>
+                                    <!-- Padding bottom block bg-END -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--    Slide1-END  -->
+
+                    <!--    Slide2-START    -->
+                    <div class="swiper-slide"> 
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <!-- Padding bottom block bg-START -->
+                                    <div class="paddingBottonWrapper historyBlock style2">
+                                        <div class="paddingBottonInner">
+                                            <!-- Image1-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="thumbnailHover" data-swiper-parallax="-60%">
+                                                    <a href="about.html" class="bg-entry" style="background-image: url(img/history-img3.jpg);"></a>
+                                                </div>
+                                                <div class="counterWrapper" data-swiper-parallax="-20%">
+                                                    <i>‘</i>
+                                                    <div class="nubmerCounter">09</div>
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <h6 class="h6 h6vw as"><a href="news.html"><b>OUR FIRST <br> CLIENT</b></a></h6>
+                                                    <p>JUNE</p>
+                                                </div>
+                                            </div>
+                                            <!-- Image1-END -->
+
+                                            <!-- Image2-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="bg-entry" style="background-image: url(img/history-img2.jpg);" data-swiper-parallax="-60%"></div>
+                                                <div class="button-play open-popup" data-rel="2" data-video-scr="https://www.youtube.com/embed/L0Q8BF1kjCM" data-swiper-parallax="-60%"></div>
+                                                     <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                        <h4 class="h4 h4vw as"><a href="about.html">CARNE LUXEMBOURG OPENS ITS DOORS</a></h4>
+                                                        <p>AUGUST</p>
+                                                    </div>
+                                            </div>
+                                            <!-- Image2-END -->
+
+                                            <!-- Image3-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="thumbnailHover" data-swiper-parallax="-60%">
+                                                    <a href="about.html" class="bg-entry" style="background-image: url(img/history-img.jpg);"></a>
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <p>NOVEMBER</p>
+                                                    <h6 class="h6 h6vw as"><a href="news.html"><b>JOHN SMITH NAMED <br> LUXEMBOURG CEO</b></a></h6>
+                                                </div>
+                                            </div>
+                                            <!-- Image3-END -->
+
+                                            <!-- Image4-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="thumbnailHover" data-swiper-parallax="-60%">
+                                                    <a href="about.html" class="bg-entry" style="background-image: url(img/history-img4.jpg);">
+                                                    </a>
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <p><b>2008 IN THE INDUSTRY</b></p>
+                                                    <h6 class="h6 h6vw as"><a href="news.html"><b>NEW FINTECH SOLUTIONS <br> OFFER BETTER RESULTS</b></a></h6>
+                                                </div>
+                                            </div>
+                                            <!-- Image4-END -->
+
+                                            <!-- Image5-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="bg-entry" style="background-image: url(img/history-img5.jpg);" data-swiper-parallax="-60%">
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <span>FIRST LOGO <br> VERSION</span>
+                                                </div>
+                                            </div>
+                                            <!-- Image5-END -->
+                                            
+                                            <!-- Hsistory tema button-START -->
+                                            <div class="historyTeam" data-swiper-parallax="-20%">
+                                                <a href="#" class="button darkblue animation-right teamPopupButton" >
+                                                    <span class="text"><img src="img/icon-16.png" alt="" /> <span><b>2008</b> - BEHIND THE SCENES</span></span>
+                                                    <span class="text"><img src="img/icon-12.png" alt="" /> <span><b>2008</b> - BEHIND THE SCENES</span></span>
+                                                </a>
+                                            </div>
+                                            <!-- Hsistory tema button-END -->
+                                        </div>
+                                    </div>
+                                    <!-- Padding bottom block bg-END -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--    Slide2-END  -->
+
+                    <!--    Slide3-START    -->
+                    <div class="swiper-slide"> 
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <!-- Padding bottom block bg-START -->
+                                    <div class="paddingBottonWrapper historyBlock style2">
+                                        <div class="paddingBottonInner">
+                                            <!-- Image1-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="thumbnailHover" data-swiper-parallax="-60%">
+                                                    <a href="about.html" class="bg-entry" style="background-image: url(img/history-img.jpg);"></a>
+                                                </div>
+                                                <div class="counterWrapper" data-swiper-parallax="-20%">
+                                                    <i>‘</i>
+                                                    <div class="nubmerCounter">10</div>
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <h6 class="h6 h6vw as"><a href="news.html"><b>OUR FIRST <br> CLIENT</b></a></h6>
+                                                    <p>JUNE</p>
+                                                </div>
+                                            </div>
+                                            <!-- Image1-END -->
+
+                                            <!-- Image2-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="bg-entry" style="background-image: url(img/history-img2.jpg);" data-swiper-parallax="-60%"></div>
+                                                <div class="button-play open-popup" data-rel="2" data-video-scr="https://www.youtube.com/embed/L0Q8BF1kjCM" data-swiper-parallax="-60%"></div>
+                                                     <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                        <h4 class="h4 h4vw as"><a href="about.html">CARNE LUXEMBOURG OPENS ITS DOORS</a></h4>
+                                                        <p>AUGUST</p>
+                                                    </div>
+                                            </div>
+                                            <!-- Image2-END -->
+
+                                            <!-- Image3-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="thumbnailHover" data-swiper-parallax="-60%">
+                                                    <a href="about.html" class="bg-entry" style="background-image: url(img/history-img3.jpg);"></a>
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <p>NOVEMBER</p>
+                                                    <h6 class="h6 h6vw as"><a href="news.html"><b>JOHN SMITH NAMED <br> LUXEMBOURG CEO</b></a></h6>
+                                                </div>
+                                            </div>
+                                            <!-- Image3-END -->
+
+                                            <!-- Image4-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="thumbnailHover" data-swiper-parallax="-60%">
+                                                    <a href="about.html" class="bg-entry" style="background-image: url(img/history-img4.jpg);">
+                                                    </a>
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <p><b>2008 IN THE INDUSTRY</b></p>
+                                                    <h6 class="h6 h6vw as"><a href="news.html"><b>NEW FINTECH SOLUTIONS <br> OFFER BETTER RESULTS</b></a></h6>
+                                                </div>
+                                            </div>
+                                            <!-- Image4-END -->
+
+                                            <!-- Image5-START -->
+                                            <div class="paddingBottonImgWrapper">
+                                                <div class="bg-entry" style="background-image: url(img/history-img5.jpg);" data-swiper-parallax="-60%">
+                                                </div>
+                                                <div class="historyDetail sa sm color1" data-swiper-parallax="-30%">
+                                                    <span>FIRST LOGO <br> VERSION</span>
+                                                </div>
+                                            </div>
+                                            <!-- Image5-END -->
+                                            
+                                            <!-- Hsistory tema button-START -->
+                                            <div class="historyTeam" data-swiper-parallax="-20%">
+                                                <a href="#" class="button darkblue animation-right teamPopupButton" >
+                                                    <span class="text"><img src="img/icon-16.png" alt="" /> <span><b>2008</b> - BEHIND THE SCENES</span></span>
+                                                    <span class="text"><img src="img/icon-12.png" alt="" /> <span><b>2008</b> - BEHIND THE SCENES</span></span>
+                                                </a>
+                                            </div>
+                                            <!-- Hsistory tema button-END -->
+                                        </div>
+                                    </div>
+                                    <!-- Padding bottom block bg-END -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--    Slide3-END  -->
+                </div>
+            </div>
+            <div class="emptySpace-xs80"></div>
+            <!--    Swiper poiner pagination-START  -->
+            <div class="swiper-pagination positionCenter reversPagination size2 blackPagination"></div>
+            <!--    Swiper poiner pagination-END    -->
+        </div>
+        <!--  History swiper-END  -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 no-padding">
+                    <div class="discoverWrapper">
+                    <div class="bg-entry" style="background-image: url(img/discover-bg.jpg)"></div>
+                    <div class="cell-view">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 col-md-offset-2">
+                                <h5 class="h5 as white">DISCOVER <b>HAT WE DO</b></h5>
+                                <div class="emptySpace-xs15"></div>
+                            </div>
+                            <div class="col-sm-4 col-sm-offset-1 col-lg-2 col-lg-offset-2">
+                                <a class="button" href="contact.html">
+                                    <span class="text"><span>GO TO SERVICES</span> <img src="img/icon-1.png" alt="" /></span>
+                                    <span class="text"><span>GO TO SERVICES</span> <img src="img/icon-2.png" alt="" /></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-START -->
+        <footer>
+            <div class="content-columns">
+                <div class="content-left footer-left">
+                    <div class="footer-content">
+                        <div class="footer-twitter-title color1"><img src="img/icon-18.png" alt="" />https://twitter.com/<b>carneglobal</b></div>
+                        <i class="sa lg transparent90 white">Help For Children announces appointment of Jennifer Collins as a new member to its Global Board of Directors, http://www.carnegroup.com/help-for-children-announces …</i>
+                    </div>
+                </div>
+                <div class="content-right footer-right">
+                    <div class="footer-content">
+                        <h5 class="color1 light">SUBSCRIBE TO OUR NEWSLETTER</h5>
+                        <div class="bs-xs-30"></div>
+                        <input class="footer-input" value="" placeholder="your e-mail address..." />
+                        <div class="bs-xs-35"></div>
+                        <a class="button">
+                            <span class="text"><span>SUBSCRIBE NOW</span> <img src="img/icon-1.png" alt="" /></span>
+                            <span class="text"><span>SUBSCRIBE NOW</span> <img src="img/icon-1.png" alt="" /></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img id="footer-logo" src="img/bg-transparent-1.png" alt="" />
+            <div class="footer-menu">
+                <a href="index.html"><img src="img/logo-footer.png" alt="" /></a>
+                <a href="terms.html">TERMS &amp; CONDITIONS</a>
+                <a href="#">SITEMAP</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="#">PRESS</a>
+                <a href="#">DOWNLOADS</a>
+                <a href="#">MEDIA</a>
+            </div>
+        </footer>
+        <!-- Footer-END -->
+
+    </div>
+
+    <!--    Popup-START     -->
+    <div class="popup-wrapper">
+        <div class="bg-layer"></div>
+
+        <!--    Search popup-START    -->
+        <div class="popup-content" data-rel="1">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <form class="searchForm">
+                                <div class="input-wrapper light">
+                                    <input class="input" type="text" value="" placeholder="Enter keywords">
+                                    <div class="inputFocusLine"></div>
+                                </div>
+                                <div class="imgWrapper">
+                                    <input type="submit">
+                                    <img src="img/icon-17.png" alt="">
+                                    <img src="img/icon-24.png" alt="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    Popup close button-START    -->
+            <div class="button-close">
+                <span></span><span></span>
+            </div>
+            <!--    Popup close button-END  -->
+        </div>
+        <!--    Search popup-END  -->
+
+        <!--    Video popup-START    -->
+        <div class="popup-content" data-rel="2">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+                <div class="videoIframe">
+                    <div class="embed-responsive embed-responsive-16by9 fullHeightVideo">
+                        <iframe width="560" height="315" src="about:blank" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--    Popup close button-START    -->
+                <div class="button-close">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Video popup-END  -->
+
+        <!--    History team-START    -->
+        <div class="popup-content" data-rel="3">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+                
+                <!--    Popup close button-START    -->
+                <div class="button-close">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    History team-END  -->
+
+    </div>
+    <!--    Popup-END   -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    
+    <!--    Styles-START    -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/snazzy-info-window.css" rel="stylesheet" type="text/css" />
+    <!--    Styles-END    -->
+
+    <!--    Script-START    -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/global.js" type="text/javascript"></script>
+    <!--    Script-END    -->
+
+
+</body>
+</html>

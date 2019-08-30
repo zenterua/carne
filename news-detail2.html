@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  	<title>Carne</title>
+
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #163d6d;z-index: 50;}
+        #loader-wrapper .imgWrapper{position:absolute;top:50%;left:50%;max-width:38px;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body .vertical-centered-box .content{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-animation:fadein 250ms linear .1s forwards;-moz-animation:fadein 250ms linear .1s forwards;-o-animation:fadein 250ms linear .1s forwards;animation:fadein 250ms linear .1s forwards;display:inline-block;vertical-align:middle;text-align:left;font-size:0;opacity:0}.loader-line-mask{position:absolute;left:50%;top:50%;width:50px;height:100px;margin-left:-50px;margin-top:-50px;overflow:hidden;-webkit-transform-origin:50px 50px;-moz-transform-origin:50px 50px;-ms-transform-origin:50px 50px;-o-transform-origin:50px 50px;transform-origin:50px 50px;-webkit-mask-image:-webkit-linear-gradient(top,#000,rgba(0,0,0,0));mix-blend-mode:hard-light;opacity:.8}.loader-line-mask .loader-line{width:100px;height:100px;border-radius:50%}.loader-line-mask.one{-webkit-animation:rotate 2s infinite linear;-moz-animation:rotate 2s infinite linear;-o-animation:rotate 2s infinite linear;animation:rotate 2s infinite linear}.loader-line-mask.one .loader-line{box-shadow:inset 0 0 0 8px #fff}.loader-line-mask.two{-webkit-animation:rotate 1.8s .5s infinite linear;-moz-animation:rotate 1.8s .5s infinite linear;-o-animation:rotate 1.8s .5s infinite linear;animation:rotate 1.8s .5s infinite linear}.loader-line-mask.two .loader-line{box-shadow:inset 0 0 0 8px #18acec}.loader-line-mask.three{-webkit-animation:rotate 2s 1s infinite linear;-moz-animation:rotate 2s 1s infinite linear;-o-animation:rotate 2s 1s infinite linear;animation:rotate 2s 1s infinite linear}.loader-line-mask.three .loader-line{box-shadow:inset 0 0 0 8px #08274c}.loader-line-mask.four{-webkit-animation:rotate 1.8s 1.4s infinite linear;-moz-animation:rotate 1.8s 1.4s infinite linear;-o-animation:rotate 1.8s 1.4s infinite linear;animation:rotate 1.8s 1.4s infinite linear}.loader-line-mask.four .loader-line{box-shadow:inset 0 0 0 8px #247BA0}
+            @-webkit-keyframes rotate{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotate{0%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(360deg)}}@-o-keyframes rotate{0%{-o-transform:rotate(0)}100%{-o-transform:rotate(360deg)}}@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-moz-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-o-keyframes fadein{0%{opacity:0}100%{opacity:1}}@keyframes fadein{0%{opacity:0}100%{opacity:1}}[not-existing]{zoom:1}
+            html:not(.mobile)::-webkit-scrollbar, html:not(.mobile) *::-webkit-scrollbar {width: 6px; height: 6px;}
+            html:not(.mobile)::-webkit-scrollbar-track, html:not(.mobile) *::-webkit-scrollbar-track {background: rgba(0,0,0,.15); }
+            html:not(.mobile)::-webkit-scrollbar-thumb, html:not(.mobile) *::-webkit-scrollbar-thumb {background: #08274c; border-radius: 3px;}
+
+    </style>
+</head>
+<body>
+
+    <!-- Loader-START -->
+    <div id="loader-wrapper">
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask one">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask two">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask three">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask four">
+              <div class="loader-line"></div>
+            </div>
+          </div>
+        </div>  
+        <div class="imgWrapper">
+            <img src="img/loader-logo.jpg" alt="">
+        </div>
+    </div>
+    <!-- Loader-END -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header>
+            <div class="header-container">
+                <a id="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+                <div class="nav-wrapper">
+                    <div class="nav-overflow">
+                        <nav>
+                            <a href="index.html">HOME</a>
+                            <a href="about.html">ABOUT US</a>
+                            <a href="solutions.html">SOLUTIONS</a>
+                            <a href="careers.html">CAREERS</a>
+                            <a class="active" href="news.html">NEWS</a>
+                            <a href="events.html">EVENTS</a>
+                            <a href="contact.html">CONTACT</a>
+                        </nav>
+                        <div class="header-right">
+                            <div class="languages">
+                                <a class="title">ENG</a>
+                                <div class="toggle">
+                                    <a class="active" href="index.html">Eng</a>
+                                    <a href="index.html">Fr</a>
+                                    <a href="index.html">Es</a>
+                                </div>
+                            </div>
+                            <div class="search open-popup" data-rel="1">
+                                <img src="img/icon-17.png" alt="" />
+                                <img src="img/icon-20.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <!-- Header-END -->
+
+        <!--   Home swiper-START    -->
+        <div class="swiperMainWrapper newsBanner">
+            <!--    Swiper Buttons-START    -->
+            <div class="swiper-button-prev hidden-my-lg"></div>
+            <div class="swiper-button-next hidden-my-lg"></div>
+            <!--    Swiper Buttons-END  -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--    Slide1-START    -->
+                    <div class="swiper-slide"> 
+                        <div class="page-banner">
+                            <div class="bg-entry darkShadow2" style="background-image: url(img/news-bg2.jpg);"></div>
+                            <div class="align page-height-banner">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <div class="text-shortcode style-1 xl white">
+                                                <div class="title">
+                                                    <h1>Risk Manager</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="emptySpace40"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--    Slide1-END  -->
+                </div>
+                <!--    Swiper poiner pagination-START  -->
+                <div class="swiper-pagination"></div>
+                <!--    Swiper poiner pagination-END    -->
+            </div>
+            <!--    Popup close button-START    -->
+            <div class="button-close">
+                <span></span><span></span>
+            </div>
+            <!--    Popup close button-END  -->
+        </div>
+        <!--    Home swiper-END  -->
+
+        <div class="emptySpace40"></div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <!-- Left side-START -->
+                        <div class="col-md-7 col-lg-8">
+                            <div class="leftSideNews">
+                                <div class="newsInfoWrapper">
+                                    <div class="newsInfo color2">
+                                        <div class="imgWrapper">
+                                            <img src="img/location-icon-color2.png" alt="">
+                                        </div>
+                                        <span><b>Luxembourg</b></span>
+                                    </div>
+                                    <div class="newsInfo color2">
+                                        <div class="imgWrapper">
+                                            <img src="img/calendar-icon-color2.png" alt="">
+                                        </div>
+
+                                        <span><b>Jan 2017 - N/A </b></span>
+                                    </div>
+                                    
+                                    <div class="newsInfo color2">
+                                        <div class="imgWrapper">
+                                            <img src="img/angle2-color2.png" alt="">
+                                        </div>
+
+                                        <span>Medium Management</span>
+                                    </div>
+                                </div>
+
+                                <div class="emptySpace25 emptySpace-xs25"></div>
+                                <div class="borderSeparator"></div>
+                                <div class="emptySpace40"></div>
+                                
+                                <!-- Article-START -->
+                                <div class="simpleArticle sa color2">
+                                    <h5>What you’ll be doing</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                    <h5>What we look for in you</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum:</p>
+
+                                    <ul>
+                                        <li>Sed ut perspiciatis unde omnis iste natus error voluptatem.</li>
+                                        <li>Accusantium doloremque laudantium, totam rem aperiam, quae ab illo inventore veritatis et quasi architecto beatae.</li>
+                                        <li>    Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione.</li>
+                                        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse eu fugiat nulla pariatur. </li>
+                                        <li>Excepteur sint occaecat cupidatat non proident, sunt in deserunt mollit anim id est laborum. </li>
+                                    </ul>
+                                </div>
+                                <!-- Article-END -->
+
+                            </div>   
+                            <div class="emptySpace-sm40"></div>  
+                        </div>
+                        <!-- Left side-START -->
+
+                        <!-- Right side-START -->
+                        <div class="col-md-5 col-lg-4 ">
+                            <div class="benefitsWrapper color2">
+                                <div class="imgWrapper benefitsPosition">
+                                    <img src="img/benefits1.jpg" alt="">
+                                </div>
+                                <div class="emptySpace-sm40"></div>
+                                <div class="simpleArticle">
+                                    <h5>Where you’ll work from</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                </div>
+
+                                <div class="emptySpace40"></div>
+
+                                <div class="benefints"> 
+                                    <h5>Benefits</h5>
+
+                                    <div class="emptySpace30"></div>
+
+                                    <!-- Bnefints1-START -->
+                                    <div class="bene sa sm">
+                                        <div class="imgWrapper">
+                                            <img src="img/benefits-icon.png" alt="">
+                                        </div>
+                                        <p>DENTAL INSURANCE</p>
+                                    </div>
+                                    <!-- Bnefints1-END -->
+                                    
+                                    <!-- Bnefints2-START -->
+                                    <div class="bene sa sm">
+                                        <div class="imgWrapper">
+                                            <img src="img/benefits2-icon.png" alt="">
+                                        </div>
+                                        <p>LUNCH AT THE OFFICE</p>
+                                    </div>
+                                    <!-- Bnefints2-END -->
+                                    
+                                    <!-- Bnefints3-START -->
+                                    <div class="bene sa sm">
+                                        <div class="imgWrapper">
+                                            <img src="img/benefits3-icon.png" alt="">
+                                        </div>
+                                        <p>FITNESS SUBSCRIPTION</p>
+                                    </div>
+                                    <!-- Bnefints3-END -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right side-END -->
+
+                        
+                        <div class="col-xs-12">
+                            <div class="emptySpace40"></div>
+                            <div class="borderSeparator"></div>
+                            <div class="emptySpace45"></div>
+
+                            <div class="row">
+                                <div class="col-sm-7 col-md-5">
+                                    <div class="applyToday">
+                                        <h5 class="h5 color3">SUITS YOU? <b>APPLY TODAY!</b></h5>
+                                    </div>
+                                    <div class="emptySpace-sm40"></div>
+                                </div>
+                                <div class="col-sm-5 col-md-4">
+                                    <div class="input-submit-wrapper">
+                                        <input class="input" type="text" value="" placeholder="upload your CV..." readonly />
+                                        <div class="submit"><span>Browse</span><input type="file"  onchange="$(this).parent().parent().addClass('active').find('.input').val($(this).val().split( '\\' ).pop()); if($(this).val()=='') $(this).next().click();" /><div class="file-remove"></div></div>
+                                    </div>
+                                    <div class="emptySpace-sm40"></div>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <div class="applyWrapper">
+                                        <a class="button" style="margin-left: 15px;">
+                                            <span class="text"><span>SUBMIT CV & APPLY</span> <img src="img/icon-1.png" alt="" /></span>
+                                            <span class="text"><span>SUBMIT CV & APPLY</span> <img src="img/icon-1.png" alt="" /></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll top button-START -->
+            <div class="back-to-top-wrapper">
+                <div class="title">BACK TO TOP</div>
+                <div class="icon"></div>
+                <div class="line"></div>
+            </div>
+            <!-- Scroll top button-END -->
+        </div>
+    
+        <!-- Footer-START -->
+        <footer>
+            <div class="content-columns">
+                <div class="content-left footer-left">
+                    <div class="footer-content">
+                        <div class="footer-twitter-title color1"><img src="img/icon-18.png" alt="" />https://twitter.com/<b>carneglobal</b></div>
+                        <i class="sa lg transparent90 white">Help For Children announces appointment of Jennifer Collins as a new member to its Global Board of Directors, http://www.carnegroup.com/help-for-children-announces …</i>
+                    </div>
+                </div>
+                <div class="content-right footer-right">
+                    <div class="footer-content">
+                        <h5 class="color1 light">SUBSCRIBE TO OUR NEWSLETTER</h5>
+                        <div class="bs-xs-30"></div>
+                        <input class="footer-input" value="" placeholder="your e-mail address..." />
+                        <div class="bs-xs-35"></div>
+                        <a class="button">
+                            <span class="text"><span>SUBSCRIBE NOW</span> <img src="img/icon-1.png" alt="" /></span>
+                            <span class="text"><span>SUBSCRIBE NOW</span> <img src="img/icon-1.png" alt="" /></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img id="footer-logo" src="img/bg-transparent-1.png" alt="" />
+            <div class="footer-menu">
+                <a href="index.html"><img src="img/logo-footer.png" alt="" /></a>
+                <a href="#">TERMS &amp; CONDITIONS</a>
+                <a href="#">SITEMAP</a>
+                <a href="#">CONTACT</a>
+                <a href="#">PRESS</a>
+                <a href="#">DOWNLOADS</a>
+                <a href="#">MEDIA</a>
+            </div>
+        </footer>
+        <!-- Footer-END -->
+
+    </div>
+
+    <!-- Ajax loader-START -->
+    <div class="ajaxLoader">
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask one">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask two">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask three">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask four">
+              <div class="loader-line"></div>
+            </div>
+          </div>
+        </div>  
+        <div class="imgWrapper">
+            <img src="img/loader-logo.jpg" alt="">
+        </div>
+    </div>
+    <!-- Ajax loader-START -->
+
+    <!--    Popup-START     -->
+    <div class="popup-wrapper">
+        <div class="bg-layer"></div>
+
+        <!--    Search popup-START    -->
+        <div class="popup-content" data-rel="1">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <form class="searchForm">
+                                <div class="input-wrapper light">
+                                    <input class="input" type="text" value="" placeholder="Enter keywords">
+                                    <div class="inputFocusLine"></div>
+                                </div>
+                                <div class="imgWrapper">
+                                    <input type="submit">
+                                    <img src="img/icon-17.png" alt="">
+                                    <img src="img/icon-24.png" alt="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    Popup close button-START    -->
+            <div class="button-close">
+                <span></span><span></span>
+            </div>
+            <!--    Popup close button-END  -->
+        </div>
+        <!--    Search popup-END  -->
+
+        <!--    Video popup-START    -->
+        <div class="popup-content" data-rel="2">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+                <div class="videoIframe">
+                    <div class="embed-responsive embed-responsive-16by9 fullHeightVideo">
+                        <iframe width="560" height="315" src="about:blank" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--    Popup close button-START    -->
+                <div class="button-close">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Video popup-END  -->
+
+    </div>
+    <!--    Popup-END   -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    
+    <!--    Styles-START    -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/snazzy-info-window.css" rel="stylesheet" type="text/css" />
+    <!--    Styles-END    -->
+
+    <!--    Script-START    -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/global.js" type="text/javascript"></script>
+    <!--    Script-END    -->
+
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  	<title>Carne</title>
+
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #163d6d;z-index: 50;}
+        #loader-wrapper .imgWrapper{position:absolute;top:50%;left:50%;max-width:38px;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body .vertical-centered-box .content{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-animation:fadein 250ms linear .1s forwards;-moz-animation:fadein 250ms linear .1s forwards;-o-animation:fadein 250ms linear .1s forwards;animation:fadein 250ms linear .1s forwards;display:inline-block;vertical-align:middle;text-align:left;font-size:0;opacity:0}.loader-line-mask{position:absolute;left:50%;top:50%;width:50px;height:100px;margin-left:-50px;margin-top:-50px;overflow:hidden;-webkit-transform-origin:50px 50px;-moz-transform-origin:50px 50px;-ms-transform-origin:50px 50px;-o-transform-origin:50px 50px;transform-origin:50px 50px;-webkit-mask-image:-webkit-linear-gradient(top,#000,rgba(0,0,0,0));mix-blend-mode:hard-light;opacity:.8}.loader-line-mask .loader-line{width:100px;height:100px;border-radius:50%}.loader-line-mask.one{-webkit-animation:rotate 2s infinite linear;-moz-animation:rotate 2s infinite linear;-o-animation:rotate 2s infinite linear;animation:rotate 2s infinite linear}.loader-line-mask.one .loader-line{box-shadow:inset 0 0 0 8px #fff}.loader-line-mask.two{-webkit-animation:rotate 1.8s .5s infinite linear;-moz-animation:rotate 1.8s .5s infinite linear;-o-animation:rotate 1.8s .5s infinite linear;animation:rotate 1.8s .5s infinite linear}.loader-line-mask.two .loader-line{box-shadow:inset 0 0 0 8px #18acec}.loader-line-mask.three{-webkit-animation:rotate 2s 1s infinite linear;-moz-animation:rotate 2s 1s infinite linear;-o-animation:rotate 2s 1s infinite linear;animation:rotate 2s 1s infinite linear}.loader-line-mask.three .loader-line{box-shadow:inset 0 0 0 8px #08274c}.loader-line-mask.four{-webkit-animation:rotate 1.8s 1.4s infinite linear;-moz-animation:rotate 1.8s 1.4s infinite linear;-o-animation:rotate 1.8s 1.4s infinite linear;animation:rotate 1.8s 1.4s infinite linear}.loader-line-mask.four .loader-line{box-shadow:inset 0 0 0 8px #247BA0}
+            @-webkit-keyframes rotate{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotate{0%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(360deg)}}@-o-keyframes rotate{0%{-o-transform:rotate(0)}100%{-o-transform:rotate(360deg)}}@keyframes rotate{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-moz-keyframes fadein{0%{opacity:0}100%{opacity:1}}@-o-keyframes fadein{0%{opacity:0}100%{opacity:1}}@keyframes fadein{0%{opacity:0}100%{opacity:1}}[not-existing]{zoom:1}
+            html:not(.mobile)::-webkit-scrollbar, html:not(.mobile) *::-webkit-scrollbar {width: 6px; height: 6px;}
+            html:not(.mobile)::-webkit-scrollbar-track, html:not(.mobile) *::-webkit-scrollbar-track {background: rgba(0,0,0,.15); }
+            html:not(.mobile)::-webkit-scrollbar-thumb, html:not(.mobile) *::-webkit-scrollbar-thumb {background: #08274c; border-radius: 3px;}
+
+    </style>
+</head>
+<body>
+
+    <!-- Loader-START -->
+    <div id="loader-wrapper">
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask one">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask two">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask three">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask four">
+              <div class="loader-line"></div>
+            </div>
+          </div>
+        </div>  
+        <div class="imgWrapper">
+            <img src="img/loader-logo.jpg" alt="">
+        </div>
+    </div>
+    <!-- Loader-END -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header>
+            <div class="header-container">
+                <a id="logo" href="index.html"><img src="img/logo.png" alt="" /></a>
+                <div class="nav-wrapper">
+                    <div class="nav-overflow">
+                        <nav>
+                            <a href="index.html">HOME</a>
+                            <a href="about.html">ABOUT US</a>
+                            <a href="solutions.html">SOLUTIONS</a>
+                            <a href="careers.html">CAREERS</a>
+                            <a class="active" href="news.html">NEWS</a>
+                            <a href="events.html">EVENTS</a>
+                            <a href="contact.html">CONTACT</a>
+                        </nav>
+                        <div class="header-right">
+                            <div class="languages">
+                                <a class="title">ENG</a>
+                                <div class="toggle">
+                                    <a class="active" href="index.html">Eng</a>
+                                    <a href="index.html">Fr</a>
+                                    <a href="index.html">Es</a>
+                                </div>
+                            </div>
+                            <div class="search open-popup" data-rel="1">
+                                <img src="img/icon-17.png" alt="" />
+                                <img src="img/icon-20.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <!-- Header-END -->
+
+        <!--   Home swiper-START    -->
+        <div class="swiperMainWrapper newsBanner">
+            <!--    Swiper Buttons-START    -->
+            <div class="swiper-button-prev hidden-my-lg"></div>
+            <div class="swiper-button-next hidden-my-lg"></div>
+            <!--    Swiper Buttons-END  -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--    Slide1-START    -->
+                    <div class="swiper-slide"> 
+                        <div class="page-banner">
+                            <div class="bg-entry darkShadow2 simpleShadow" style="background-image: url(img/news-bg.jpg);"></div>
+                            <div class="align page-height">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-offset-1">
+                                            <div class="text-shortcode style-1 xl white">
+                                                <div class="title">
+                                                    <h1>Shock Brexit Result Leads to  Uncertainty for Fund Managers  and Investors in Funds</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--    Slide1-END  -->
+                </div>
+                <!--    Swiper poiner pagination-START  -->
+                <div class="swiper-pagination"></div>
+                <!--    Swiper poiner pagination-END    -->
+            </div>
+            <!--    Popup close button-START    -->
+            <div class="button-close">
+                <span></span><span></span>
+            </div>
+            <!--    Popup close button-END  -->
+        </div>
+        <!--    Home swiper-END  -->
+
+        <div class="emptySpace40"></div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="row">
+                        <!-- Left side-START -->
+                        <div class="col-md-7 col-lg-8">
+                            <div class="leftSideNews">
+                                <div class="newsInfoWrapper">
+                                    <div class="newsInfo color2">
+                                        <div class="imgWrapper">
+                                            <img src="img/location-icon-color2.png" alt="">
+                                        </div>
+                                        <span><b>Luxembourg</b></span>
+                                    </div>
+                                    <div class="newsInfo color2">
+                                        <div class="imgWrapper">
+                                            <img src="img/calendar-icon-color2.png" alt="">
+                                        </div>
+
+                                        <span>posted on 11 <b>Aug 2016</b></span>
+                                    </div>
+                                </div>
+
+                                <div class="emptySpace40 emptySpace-xs25"></div>
+                                <div class="borderSeparator"></div>
+                                <div class="emptySpace40"></div>
+                                
+                                <!-- Article-START -->
+                                <div class="simpleArticle sa color2">
+                                    <h5>Managing the Uncertainty of Brexit</h5>
+                                    <p>Article 50; Passporting; Norwegian model; Swiss-plus; Michel Barnier; David Davis; Fear; Uncertainty. All of a sudden the language of Brexit is part of our everyday lexicon yet none of us know what the outcome is likely to be. In a business where we are asking investors to commit significant amounts of capital over at least three to five-year time horizons, political uncertainty can lead to inaction. </p>
+                                    <p>Whilst the exact outcome of Brexit is unknown its impact in the investment funds sector can be managed. We are going to consider Brexit’s impact on EU access under 3 headings; Investment Management, Product Manufacture and Distribution.</p>
+                                    <h5>Investment Management</h5>
+                                    <p>Much of the European asset management community is based in London. This need not change post Brexit. It should be entirely possible for UK based asset managers to manage EU UCITS and AIF funds under a delegated arrangement. </p>
+                                    <p>This arrangement is commonplace today for US, Swiss and other managers of well-regulated third country jurisdictions. Regardless of whether there is a hard or soft Brexit it seems inconceivable that UK managers would be prohibited from managing EU funds on a similar basis.</p>
+                                    <h5>Product Manufacture</h5>
+                                    <p>Most funds which are marketed on a cross border basis are established in either Ireland or Luxembourg. Over the past 25 years the Irish funds business has grown in parallel with the success of the City of London and has significant expertise in establishing and servicing all types of UCITS and AIFs. </p>
+                                    <p>We share a common language with the UK, we both operate under a common law legal system, we are geographically and culturally close to the UK and the London/Dublin route is the best served international airline route in the world. </p>
+                                    <p> The Irish government has been clear that Ireland’s future lies within the EU. Utilising an enhanced self-managed solution, an established third party management company and your own management company Ireland can continue to provide the platform for UK managers to access the EU. Ireland’s market leading position in the servicing of hedge funds makes it the natural home for UK firms seeking to establish an AIFM within the EU27 block.</p>
+                                    <h5>Distribution</h5>
+                                    <p>One area where the impact may be more pronounced is on distribution. While UCITS and AIFMD offer a product passport, a separate licence is needed to sell the product. This is typically carried out under a MiFID passport. While MiFID 2 offers the potential of third country access, the denial of passport rights to UK firms using their MiFID passport to distribute their EU funds post Brexit would be a challenge that would have to be addressed. That said, solutions will be at hand - a MiFID licence could be sought in a remaining EU jurisdiction such as Ireland and third party distribution arrangements are possible. It is likely that solutions similar to the UK authorized representative regime and other secondee solutions may emerge. </p>
+                                    <p>There is also time for these solutions to emerge. While an EU investor may well require an EU product in which to invest, until Brexit occurs UK MiFID firms will be able to continue to distribute product manufactured in Ireland or Luxembourg.</p>
+                                    <h5>Conclusion</h5>
+                                    <p>While the outcome of Brexit remains far from certain, solutions do exist which, with a few modifications, will allow UK fund managers to continue to manage, manufacture and distribute their products in the EU in much the same way as they do today. </p>
+                                    <p> Investors are very familiar with this model and Ireland is well placed to continue its successful partnership with the UK in manufacturing and servicing investment funds which are sold to EU and other investors based farther afield regardless of the form the UK/EU relationship takes post Brexit. Fear of Brexit need not lead us to radical solutions where familiar ones are at hand.</p>
+                                </div>
+                                <!-- Article-END -->
+
+                                <div class="emptySpace75"></div>
+
+                                <!-- Commnets-START -->
+                                <div class="commentTitle color3">
+                                    <div class="subTitle">WHAT OTHERS SAY</div>
+                                    <h3 class="h3 as">COMMENTS</h3>
+                                    <div class="commentCounter">
+                                        <span>03</span>
+                                    </div>
+                                </div>
+
+                                <div class="emptySpace45"></div>
+
+                                <ul class="comments color3">
+                                    <li>
+                                        <div class="imgWrapper">
+                                            SB
+                                        </div>
+                                        <div class="personeText">
+                                            <span>STEVE BANNER</span>
+                                            <p>Very interesting article. Is there any other place where I can find out more on this?</p>
+                                        </di>
+                                        <div class="emptySpace40"></div>
+                                    </li>
+
+                                    <li>
+                                        <div class="imgWrapper">
+                                            AJ
+                                        </div>
+                                        <div class="personeText">
+                                            <span>ALEXANDER JOHNSON</span>
+                                            <p>Indeed it is. I would also be interested in researching more information on this topic!</p>
+                                        </di>
+                                        <div class="emptySpace40"></div>
+                                    </li>
+
+                                    <li>
+                                        <div class="imgWrapper">
+                                            JS
+                                        </div>
+                                        <div class="personeText">
+                                            <span>JOHN SMITH</span>
+                                            <p>Keep up the good work, guys! Great article!</p>
+                                        </di>
+                                        <div class="emptySpace40"></div>
+                                    </li>
+                                </ul>
+                                <!-- Commnets-END -->
+
+                                <form>
+                                    <div class="input-wrapper">
+                                        <img src="img/icon-13.png" alt="" />
+                                        <input class="input" type="text" value="" placeholder="full name here..." />
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <img src="img/icon-14.png" alt="" />
+                                        <input class="input" type="text" value="info@carnegroup.com" placeholder="email here..." />
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <img src="img/icon-15.png" alt="" />
+                                        <textarea class="input" placeholder="leave message here..."></textarea>
+                                    </div>
+                                    <div class="bs-xs-25"></div>
+                                    <a class="button" style="margin-left: 15px;">
+                                        <span class="text"><span>SUBMIT MESSAGE</span> <img src="img/icon-1.png" alt="" /></span>
+                                        <span class="text"><span>SUBMIT MESSAGE</span> <img src="img/icon-1.png" alt="" /></span>
+                                    </a>
+                                <form>
+                            </div>   
+                            <div class="emptySpace-sm40"></div>  
+                        </div>
+                        <!-- Left side-START -->
+
+                        <!-- Right side-START -->
+                        <div class="col-md-5 col-lg-4">
+                            <div class="rightSideBlock authorBlock">
+                                <div class="authorInfo">
+                                    <span>AUTHOR</span>
+                                    <b>Johnathan Smith,</b>
+                                    <p>Director Carne Luxembourg</p>
+                                </div>
+                                <div class="imgWrapper">
+                                    <img src="img/persone-img.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="emptySpace45 emptySpace-xs40"></div>
+
+                            <div class="rightSideBlock tagsBlock">
+                                <span>AUTHOR</span>
+                                <a href="#">#Brexit</a>
+                                <a href="#">#EU</a>
+                                <a href="#">#euro</a>
+                                <a href="#">#Impact</a>
+                                <a href="#">#Luxembourg</a>
+                                <a href="#">#CarneGroup</a>
+                                <a href="#">#London</a>
+                                <a href="#">#InvestmentManagement</a>
+                                <a href="#">#Distribution</a>
+                                <a href="#">#ProductManufacture</a>
+                                <a href="#">#UK</a>
+                            </div>
+
+                            <div class="emptySpace45 emptySpace-xs40"></div>
+
+                            <div class="rightSideBlock shareBlock">
+                                <span>SHARE ARTICLE ON:</span>
+                                <a class='imgWrapper' href="https://www.facebook.com/" target="_blank">
+                                    <img src="img/fb-icon.png" alt="">
+                                    <img src="img/fb-icon-white.png" alt="">
+                                </a>
+                                <a class='imgWrapper' href="https://twitter.com/" target="_blank">
+                                    <img src="img/tw-icon.png" alt="">
+                                    <img src="img/tw-icon-white.png" alt="">
+                                </a>
+                                <a class='imgWrapper' href="https://gmail.com/" target="_blank">
+                                    <img src="img/mail-icon.png" alt="">
+                                    <img src="img/mail-icon-white.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="emptySpace40 emptySpace-xs40"></div>
+
+                            <div class="text-shortcode style-1 color3">
+                                <div class="title">
+                                    <h3>RELATED NEWS</h3>
+                                    <div class="title-line color3"></div>
+                                </div>
+                            </div>
+
+                            <div class="emptySpace25 emptySpace-xs40"></div>
+
+                            <div class="blog-shortcode">
+                                <div class="description sa lg">Des Fullam, Director in Dublin makes a value contribution to a recent article in the Global Investor Magazine</div>
+                                <a class="preview simple-hover" href="#"><img src="img/thumbnail-1.jpg" alt="" /><span class="text">Read Article</span></a>
+                                <div class="blog-shortcode-grid">
+                                    <div>
+                                        <a class="button">
+                                            <span class="text"><span>READ ARTICLE</span> <img src="img/icon-1.png" alt="" /></span>
+                                            <span class="text"><span>READ ARTICLE</span> <img src="img/icon-1.png" alt="" /></span>
+                                        </a>  
+                                    </div>
+                                    <div>
+                                        <div class="transparent70">posted on <b>12 Aug 2016</b></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="emptySpace45 emptySpace-xs40"></div>
+
+                            <div class="blog-shortcode">
+                                <div class="description sa lg"> Carne Global Fund Managers (Luxembourg) is looking to hire an Oversight Manager</div>
+                                <a class="preview simple-hover" href="#"><img src="img/thumbnail-3.jpg" alt="" /><span class="text">Read Article</span></a>
+                                <div class="blog-shortcode-grid">
+                                    <div>
+                                        <a class="button">
+                                            <span class="text"><span>READ ARTICLE</span> <img src="img/icon-1.png" alt="" /></span>
+                                            <span class="text"><span>READ ARTICLE</span> <img src="img/icon-1.png" alt="" /></span>
+                                        </a>  
+                                    </div>
+                                    <div>
+                                        <div class="transparent70">posted on <b>12 Aug 2016</b></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="emptySpace45 emptySpace-xs40"></div>
+
+                            <div class="blog-shortcode">
+                                <div class="description sa lg">Carne to hold event on “How to Raise Capital  Effectively in Europe” at the Irish Consulate in New York</div>
+                                <a class="preview simple-hover" href="#"><img src="img/thumbnail-4.jpg" alt="" /><span class="text">Read Article</span></a>
+                                <div class="blog-shortcode-grid">
+                                    <div>
+                                        <a class="button">
+                                            <span class="text"><span>READ ARTICLE</span> <img src="img/icon-1.png" alt="" /></span>
+                                            <span class="text"><span>READ ARTICLE</span> <img src="img/icon-1.png" alt="" /></span>
+                                        </a>  
+                                    </div>
+                                    <div>
+                                        <div class="transparent70">posted on <b>12 Aug 2016</b></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right side-END -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll top button-START -->
+            <div class="back-to-top-wrapper">
+                <div class="title">BACK TO TOP</div>
+                <div class="icon"></div>
+                <div class="line"></div>
+            </div>
+            <!-- Scroll top button-END -->
+        </div>
+    
+        <!-- Footer-START -->
+        <footer>
+            <div class="content-columns">
+                <div class="content-left footer-left">
+                    <div class="footer-content">
+                        <div class="footer-twitter-title color1"><img src="img/icon-18.png" alt="" />https://twitter.com/<b>carneglobal</b></div>
+                        <i class="sa lg transparent90 white">Help For Children announces appointment of Jennifer Collins as a new member to its Global Board of Directors, http://www.carnegroup.com/help-for-children-announces …</i>
+                    </div>
+                </div>
+                <div class="content-right footer-right">
+                    <div class="footer-content">
+                        <h5 class="color1 light">SUBSCRIBE TO OUR NEWSLETTER</h5>
+                        <div class="bs-xs-30"></div>
+                        <input class="footer-input" value="" placeholder="your e-mail address..." />
+                        <div class="bs-xs-35"></div>
+                        <a class="button">
+                            <span class="text"><span>SUBSCRIBE NOW</span> <img src="img/icon-1.png" alt="" /></span>
+                            <span class="text"><span>SUBSCRIBE NOW</span> <img src="img/icon-1.png" alt="" /></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img id="footer-logo" src="img/bg-transparent-1.png" alt="" />
+            <div class="footer-menu">
+                <a href="index.html"><img src="img/logo-footer.png" alt="" /></a>
+                <a href="#">TERMS &amp; CONDITIONS</a>
+                <a href="#">SITEMAP</a>
+                <a href="#">CONTACT</a>
+                <a href="#">PRESS</a>
+                <a href="#">DOWNLOADS</a>
+                <a href="#">MEDIA</a>
+            </div>
+        </footer>
+        <!-- Footer-END -->
+
+    </div>
+
+    <!-- Ajax loader-START -->
+    <div class="ajaxLoader">
+        <div class="vertical-centered-box">
+          <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask one">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask two">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask three">
+              <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask four">
+              <div class="loader-line"></div>
+            </div>
+          </div>
+        </div>  
+        <div class="imgWrapper">
+            <img src="img/loader-logo.jpg" alt="">
+        </div>
+    </div>
+    <!-- Ajax loader-START -->
+
+    <!--    Popup-START     -->
+    <div class="popup-wrapper">
+        <div class="bg-layer"></div>
+
+        <!--    Search popup-START    -->
+        <div class="popup-content" data-rel="1">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <form class="searchForm">
+                                <div class="input-wrapper light">
+                                    <input class="input" type="text" value="" placeholder="Enter keywords">
+                                    <div class="inputFocusLine"></div>
+                                </div>
+                                <div class="imgWrapper">
+                                    <input type="submit">
+                                    <img src="img/icon-17.png" alt="">
+                                    <img src="img/icon-24.png" alt="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    Popup close button-START    -->
+            <div class="button-close">
+                <span></span><span></span>
+            </div>
+            <!--    Popup close button-END  -->
+        </div>
+        <!--    Search popup-END  -->
+
+        <!--    Video popup-START    -->
+        <div class="popup-content" data-rel="2">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+                <div class="videoIframe">
+                    <div class="embed-responsive embed-responsive-16by9 fullHeightVideo">
+                        <iframe width="560" height="315" src="about:blank" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--    Popup close button-START    -->
+                <div class="button-close">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Video popup-END  -->
+
+    </div>
+    <!--    Popup-END   -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    
+    <!--    Styles-START    -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/snazzy-info-window.css" rel="stylesheet" type="text/css" />
+    <!--    Styles-END    -->
+
+    <!--    Script-START    -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/global.js" type="text/javascript"></script>
+    <!--    Script-END    -->
+
+
+</body>
+</html>
